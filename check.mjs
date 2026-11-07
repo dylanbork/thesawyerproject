@@ -12,4 +12,4 @@ for(const page of Object.keys(pages)){
  }
  assert(!/href="#"/.test(html),`${page}: no placeholder links`);
 }
-console.log('Passed: all six pages, local links and assets, donation destinations, landmarks, and titles.');
+console.log(`Passed: all ${Object.keys(pages).length} pages, local links and assets, donation destinations, landmarks, and titles.`);

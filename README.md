@@ -1,6 +1,6 @@
 # The Sawyer Project
 
-Six accessible, responsive pages with a vintage cream and evergreen design, supplied memorial artwork, and external Givebutter donation links. Uses static HTML, CSS, and small JavaScript enhancements. No runtime dependencies, account system, tracking, or submission database.
+Five accessible, responsive pages with a vintage cream and evergreen design, supplied memorial artwork, and external Givebutter donation links. The $4 Ripple Effect campaign appears on Home. Uses static HTML, CSS, and small JavaScript enhancements. No runtime dependencies, account system, tracking, or submission database.
 
 ## Run locally
 

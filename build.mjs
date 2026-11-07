@@ -1,7 +1,11 @@
-import { mkdir, writeFile, cp } from 'node:fs/promises';
+import { mkdir, writeFile, cp, readdir, unlink } from 'node:fs/promises';
 import { pages, give, ripple } from './src/content.mjs';
-const nav = [['story.html','Our Story'],['programs.html','Our Programs'],['ripple.html','The $4 Ripple Effect'],['resources.html','Resources'],['contact.html','Get Involved']];
+const nav = [['story.html','Our Story'],['programs.html','Our Programs'],['resources.html','Resources'],['contact.html','Get Involved']];
 await mkdir('dist', {recursive:true});
+// Remove obsolete generated pages when a page is retired.
+for (const entry of await readdir('dist', {withFileTypes:true})) {
+ if (entry.isFile() && entry.name.endsWith('.html') && !Object.hasOwn(pages, entry.name)) await unlink(`dist/${entry.name}`);
+}
 await cp('assets','dist/assets',{recursive:true});
 for(const asset of ['styles.css','app.js','favicon.svg']) await cp(`src/${asset}`,`dist/${asset}`);
 for(const [file,page] of Object.entries(pages)) {

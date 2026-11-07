@@ -63,7 +63,7 @@ export function homePage({ give, link, ripple }) {
             <p>We believe meaningful change doesn’t always begin with something big.</p>
             <p>Our $4 Ripple Effect invites individuals, families, and businesses to contribute in honor of Sawyer, Riley, Dylan, and Joey.</p>
             <p>Four dollars may seem small, but when people come together with a shared purpose, those contributions can create opportunities that reach far beyond the original gift.</p>
-            ${give('Support the Mission', 'button cream')}${link('ripple.html', 'The $4 Ripple Effect', 'light-link')}
+            ${give('Support the Mission', 'button cream')}
           </div>
           <div class="campaign-mark" aria-hidden="true">
             <span>THE RIPPLE EFFECT</span><strong><sup>$</sup>4</strong>${ripple}<p>Four lives. Countless ripples.</p>
