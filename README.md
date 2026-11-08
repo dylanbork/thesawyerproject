@@ -16,6 +16,10 @@ Open http://127.0.0.1:4173. Edit page copy in `src/content.mjs`, layout in `buil
 
 ## Hosting
 
+For a new Cloudflare deployment, use Workers with Static Assets, Cloudflare's current recommended workflow. Connect GitHub repository `dylanbork/thesawyerproject`, use project name `thesawyerproject`, build command `npm run build`, deploy command `npx wrangler deploy`, preview command `npx wrangler preview`, and leave the root directory blank. The checked-in `wrangler.jsonc` supplies the asset directory and custom 404 routing. This is an assets-only deployment; no Worker script is needed. After deployment, add the organization's domain in the Worker's Settings > Domains & Routes. Cloudflare's guidance: https://developers.cloudflare.com/workers/static-assets/ .
+
+The following Pages option remains available as the legacy workflow:
+
 The initial review deployment uses private Sites hosting. Keep that access until ready for launch. For independent public hosting, this site also fits Cloudflare Pages: build command `npm run build`, output `dist`, with a domain owned by the organization. Cloudflare documents static HTML hosting at https://developers.cloudflare.com/pages/framework-guides/deploy-anything/ . Keep website hosting and domain access in an account controlled by the nonprofit. This architecture can gain a CMS, contact backend, and private sponsorship applications as requirements develop; those are not implemented here.
 
 The default Vinext starter requires Node 22.13+, while this environment provides Node 18. The unused starter is retained outside this checkout in `../starter-reference`; the delivered website deliberately uses a dependency-free static build suited to this initial public-information site.
