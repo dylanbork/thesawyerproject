@@ -29,6 +29,12 @@ The default Vinext starter requires Node 22.13+, while this environment provides
 - Create a new QR code for the verified campaign or public domain before printing. The reference inserts contain unverified codes and a proposed domain, so the site does not use those codes for donations.
 - Google Fonts loads the two typefaces externally. System serif and sans-serif fallbacks keep the site usable if unavailable. Self-host font files if preferred.
 
+## Error pages
+
+The build includes branded `404.html` and `500.html` pages with Home, Our Story, and mental health resource links. They are excluded from search indexing and use root-relative links so they work even at nested missing URLs.
+
+Cloudflare Pages automatically serves `404.html` for missing routes: https://developers.cloudflare.com/pages/configuration/serving-pages/#not-found-behavior . The static `500.html` is provided for a future server/Function error handler; Cloudflare does not automatically use that file for its own platform failures. The local server renders the matching page for missing files and unexpected server errors. Restart `npm run dev` after changes to `serve.mjs`.
+
 ## Resources
 
 Support links were checked November 7, 2026. Review them periodically.
