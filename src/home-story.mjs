@@ -38,7 +38,7 @@ export function homePage({ give, link, ripple }) {
         </div>
         <div class="building-introduction">
           <p>Our goal is to create opportunities for men experiencing mental health challenges and financial barriers to feel supported, connected, and valued.</p>
-          <p>We are beginning with four individual Legacy Wellness Sponsorships, each established in honor of one of the four young men.</p>
+          <p>We are beginning with four individual Legacy Wellness Sponsorships, each established in honor of one of the four young men. At approximately $485 per person, our initial fundraising goal is $2,000.</p>
         </div>
         <div class="program-panel client-program-panel">
           <div class="big-number">10<span>week wellness program</span></div>
