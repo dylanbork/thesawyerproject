@@ -1,8 +1,9 @@
 import { homePage, storyPage } from './home-story.mjs';
+import { ripple } from './ripple.mjs';
+export { ripple };
 export const donation = 'https://givebutter.com/untitled-campaign-55scnw';
 export const give = (label='Make a ripple', cls='button') => `<a class="${cls}" href="${donation}" target="_blank" rel="noopener noreferrer">${label} <span aria-hidden="true">↗</span></a>`;
 const link = (url,label,cls='text-link') => `<a class="${cls}" href="${url}">${label} <span aria-hidden="true">↗</span></a>`;
-export const ripple = `<svg class="ripple" viewBox="0 0 320 100" fill="none" aria-hidden="true">${[154,125,94,63,30].map((r,i)=>`<ellipse cx="160" cy="50" rx="${r}" ry="${43-i*9}"/>`).join('')}</svg>`;
 const intro = (label,title,desc) => `<section class="page-intro wrap"><p class="eyebrow">${label}</p><h1>${title}</h1><p class="intro-copy">${desc}</p></section>`;
 export const pages = {
  'index.html': homePage({ give, link, ripple }),
