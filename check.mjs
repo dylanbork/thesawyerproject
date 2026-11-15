@@ -9,7 +9,7 @@ for(const page of Object.keys({...pages,...errorPages})){
  assert(html.includes(donation),`${page}: supplied campaign`);
  for(const [,url] of html.matchAll(/(?:href|src)="([^"]+)"/g)){
   if(/^(https?:|tel:|sms:|#)/.test(url))continue;
-  await access(`dist/${url}`);
+  await access(`dist/${new URL(url,'https://local.test/').pathname.slice(1)}`);
  }
  assert(!/href="#"/.test(html),`${page}: no placeholder links`);
  if(errorPages[page]){

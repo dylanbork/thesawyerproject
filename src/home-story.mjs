@@ -80,6 +80,13 @@ export function homePage({ give, link, ripple }) {
           ${link('contact.html', 'Get Involved', 'button outline')}
           ${give('Support the Mission')}
         </div>
+      </section>
+
+      <section class="status-disclosure wrap" id="status-disclosure" aria-labelledby="status-disclosure-heading">
+        <h2 id="status-disclosure-heading">501(c)(3) Status Disclosure</h2>
+        <p>The Sawyer Project is an Iowa nonprofit corporation currently preparing its application for federal 501(c)(3) tax-exempt recognition. We have not yet received IRS determination of tax-exempt status.</p>
+        <p>Contributions are currently made to support our charitable mission, but tax deductibility is not guaranteed. We will provide an update once our federal tax-exempt status has been determined.</p>
+        <p>Thank you for helping us create a ripple of kindness, connection, and hope</p>
       </section>`
   };
 }
