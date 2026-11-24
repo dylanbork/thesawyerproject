@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 640 640">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".68" numOctaves="3" seed="18" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 .40  0 0 0 0 .29  0 0 0 0 .15  .36 0 0 0 -.10"/>
+    </filter>
+    <filter id="fibers" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".025 .48" numOctaves="2" seed="7" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 .48  0 0 0 0 .34  0 0 0 0 .18  .24 0 0 0 -.08"/>
+    </filter>
+    <filter id="mottle" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency=".009" numOctaves="3" seed="25" stitchTiles="stitch"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 .55  0 0 0 0 .36  0 0 0 0 .16  .35 0 0 0 -.13"/>
+    </filter>
+  </defs>
+  <path d="M0 0h640v640H0z" filter="url(#mottle)"/>
+  <path d="M0 0h640v640H0z" filter="url(#fibers)"/>
+  <path d="M0 0h640v640H0z" filter="url(#grain)"/>
+</svg>
