@@ -38,7 +38,7 @@ export function homePage({ give, link, ripple }) {
         </div>
         <div class="building-introduction">
           <p>Our goal is to create opportunities for men experiencing mental health challenges and financial barriers to feel supported, connected, and valued.</p>
-          <p>We are beginning with four individual Legacy Wellness Sponsorships, each established in honor of one of the four young men. At approximately $485 per person, our initial fundraising goal is $2,000.</p>
+          <p>We are beginning with four individual Legacy Wellness Sponsorships, each established in honor of one of the four young men. Each sponsorship costs approximately $485 per person.</p>
         </div>
         <div class="program-panel client-program-panel">
           <div class="big-number">10<span>week wellness program</span></div>
@@ -59,10 +59,13 @@ export function homePage({ give, link, ripple }) {
         <div class="wrap campaign-layout">
           <div>
             <h2 id="ripple-heading">The $4<br><em>Ripple Effect</em></h2>
-            <p class="campaign-subtitle">Four men. Four lives. Four dollars.</p>
-            <p>We believe meaningful change doesn’t always begin with something big.</p>
-            <p>Our $4 Ripple Effect invites individuals, families, and businesses to contribute in honor of Sawyer, Riley, Dylan, and Joey.</p>
-            <p>Four dollars may seem small, but when people come together with a shared purpose, those contributions can create opportunities that reach far beyond the original gift.</p>
+            <p>Thanks to the generosity of our community, The Sawyer Project has reached its first <strong>$2,000 fundraising milestone.</strong> <strong>We are continuing to accept donations</strong> to support our ongoing mission and the opportunities still ahead.</p>
+            <p class="campaign-subtitle">The ripple continues.</p>
+            <p>Our mission continues as we work toward providing four men each year with opportunities for connection, movement, and improved mental wellness through our Legacy Wellness Sponsorships.</p>
+            <p>Looking ahead to 2027, we hope to host individual <strong>Days of Giving</strong> in honor of Sawyer, Riley, Dylan, and Joey, creating additional opportunities for our community to come together in support of their legacies.</p>
+            <p>Contributions beyond our initial fundraising goal will help support these future giving campaigns, promotional and advertising materials, program supplies, and new initiatives we hope to develop for men in our community.</p>
+            <p>We want to continue finding meaningful ways to bring people together, reduce barriers to wellness, and create opportunities for men to feel supported, connected, and valued.</p>
+            <p>Every contribution, regardless of size, helps create another ripple.</p>
             ${give('Support the Mission', 'button cream')}
           </div>
           <div class="campaign-mark" aria-hidden="true">
